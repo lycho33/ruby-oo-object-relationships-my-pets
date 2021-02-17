@@ -1,4 +1,5 @@
 require_relative 'spec_helper.rb'
+require 'pry'
 
 describe Owner do
 
@@ -21,6 +22,7 @@ describe Owner do
     describe "#species" do
       it "initializes with species set to human" do
         expect(@owner.species).to eq("human")
+     
       end
 
       it "can't change its species" do
